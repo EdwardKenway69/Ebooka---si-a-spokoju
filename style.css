@@ -329,6 +329,7 @@ footer {
     animation: modalin 0.25s;
     max-height: 85vh;
     overflow-y: auto;
+    box-sizing: border-box;
 }
 @keyframes modalin {
     from {opacity:0; transform: translate(-50%,-52%) scale(0.95);}
@@ -387,18 +388,23 @@ footer {
         position: absolute;
         top: 65px;
         right: 0;
-        width: 220px;
+        left: 0;
+        width: 100vw;
+        min-width: unset;
         padding: 18px 0;
         border-radius: 0 0 10px 10px;
         box-shadow: 0 2px 12px rgba(0,0,0,0.09);
         display: none;
         max-height: 70vh;
         overflow-y: auto;
+        z-index: 1000;
     }
     .menu.show {
         display: flex;
         max-height: 70vh;
         overflow-y: auto;
+        left: 0;
+        width: 100vw;
     }
     .menu-toggle {
         display: block;
@@ -411,12 +417,21 @@ footer {
 @media (max-width: 500px) {
     .hero h1 { font-size: 2rem; }
     .hero { padding: 40px 3vw; min-height: 220px;}
-    .footer-modal { width: 98vw; left: 1vw;}
+    .footer-modal {
+        width: 98vw;
+        left: 1vw;
+        right: 1vw;
+        min-width: unset;
+        max-width: 98vw;
+        padding: 18px 8px;
+    }
 }
 
 @media (max-width: 370px) {
     .footer-modal {
-        width: 95vw;
-        padding: 22px 6vw 18px 6vw;
+        width: 99vw;
+        left: 0.5vw;
+        right: 0.5vw;
+        padding: 10px 2vw;
     }
 }
