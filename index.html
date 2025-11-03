@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siła Spokoju</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo">
+            <span class="logo-highlight">Siła Spokoju</span>
+        </div>
+        <nav>
+            <button class="menu-toggle" aria-label="Otwórz menu">&#9776;</button>
+            <ul class="menu">
+                <li><a href="#kup-teraz" class="kup-teraz-link">Kup teraz</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#co-zyskasz">Co zyskasz</a>
+                        <a href="#co-znajdziesz">Co znajdziesz w ebooku</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#opinie">Opinie ludzi</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="kup-teraz">
+            <h1>Siła Spokoju</h1>
+            <p class="lead">Odkryj ebook, który pomoże Ci zbudować pewność siebie i pokonać stres.</p>
+            <a class="cta-btn" href="https://buy.stripe.com/28EcN53hTbTg2eE4FSeUU00" target="_blank" rel="noopener">Kup teraz za 49 zł</a>
+        </section>
+
+        <section id="co-zyskasz" class="feature-section">
+            <h2>Co zyskasz?</h2>
+            <ul>
+                <li>Błyskawiczny spokój - Odzyskasz spokój w kilka minut, nawet w najtrudniejszych sytuacjach</li>
+                <li>Mentalna odporność - Zwiększysz swoją odporność psychiczną i staniesz się silniejszy w obliczu wyzwań</li>
+                <li>Kontrolę emocji - Lepiej poradzisz sobie z trudnymi emocjami i sytuacjami konfliktowymi</li>
+                <li>Świadome reagowanie - Nauczysz się reagować świadomie zamiast impulsywnie</li>
+            </ul>
+        </section>
+
+        <section id="co-znajdziesz" class="feature-section">
+            <h2>Co znajdziesz w ebooku?</h2>
+            <ul>
+                <li>Błyskawiczne techniki na stres - działanie natychmiastowe</li>
+                <li>Budowanie mentalnej tarczy - wzmacnianie pewności siebie</li>
+                <li>Przygotowanie do wyzwań - strategie przed stresorem</li>
+                <li>Działanie w epicentrum - radzenie sobie w trudnej sytuacji</li>
+                <li>Regeneracja i wnioski - utrwalanie efektów</li>
+                <li>Zakończenie - podsumowanie</li>
+            </ul>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <button class="faq-question">Czy ebook jest dla początkujących?</button>
+                <div class="faq-answer">Tak! Ebook został napisany z myślą o osobach, które chcą zacząć pracę nad sobą bez wcześniejszego doświadczenia.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">W jakiej formie otrzymam ebooka?</button>
+                <div class="faq-answer">Ebooka otrzymuje się w formacie PDF od razu po zakupie. Po finalizacji zamówienia otrzymujesz link, który od razu pobierze ebooka.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Zwroty?</button>
+                <div class="faq-answer">Ebook nie podlega zwrotowi.</div>
+            </div>
+        </section>
+
+        <section id="opinie" class="opinie-section">
+            <h2>Opinie ludzi</h2>
+            <div class="opinia">
+                <p>„Dzięki temu ebookowi w końcu czuję, że mam kontrolę nad swoim życiem!”</p>
+                <span>- Anna</span>
+            </div>
+            <div class="opinia">
+                <p>„Świetne, praktyczne porady i zero lania wody. Polecam każdemu!”</p>
+                <span>- Marek</span>
+            </div>
+            <div class="opinia">
+                <p>„Kupiłam z ciekawości, a dostałam konkretną dawkę motywacji!”</p>
+                <span>- Kasia</span>
+            </div>
+        </section>
+    </main>
+
+
+
+<footer>
+    <div class="footer-links">
+        <a href="#" class="footer-modal-link" data-modal="kontakt">Kontakt</a> | 
+        <a href="#" class="footer-modal-link" data-modal="o-mnie">O mnie</a> | 
+        <a href="#" class="footer-modal-link" data-modal="regulamin">Regulamin</a> | 
+        <a href="#" class="footer-modal-link" data-modal="polityka">Polityka prywatności</a>
+    </div>
+    <div class="copyright">
+        &copy; 2025 Siła Spokoju. Wszelkie prawa zastrzeżone.
+    </div>
+</footer>
+
+<div class="modal-bg" id="modal-bg"></div>
+
+<div class="footer-modal" id="modal-kontakt">
+    <button class="modal-close">&times;</button>
+    <h3>Kontakt</h3>
+    <p>Email: silaspokoju@gmail.com</p>
+</div>
+
+<div class="footer-modal" id="modal-o-mnie">
+    <button class="modal-close">&times;</button>
+    <h3>O mnie</h3>
+    <p>Cześć! Mam na imię Adrian. Od lat pomagam ludziom radzić sobie ze stresem i budować pewność siebie.</p>
+</div>
+
+<div class="footer-modal" id="modal-regulamin">
+    <button class="modal-close">&times;</button>
+    <h3>Regulamin</h3>
+    <p>Pełny regulamin zakupów znajdziesz tutaj. Skontaktuj się, jeśli masz pytania.</p>
+</div>
+
+<div class="footer-modal" id="modal-polityka">
+    <button class="modal-close">&times;</button>
+    <h3>Polityka prywatności</h3>
+    <p>Szanuję Twoją prywatność. Dane osobowe są bezpieczne i nie będą udostępniane osobom trzecim.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
